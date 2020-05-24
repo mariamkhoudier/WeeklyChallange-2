@@ -1,10 +1,14 @@
 class Customer {
-    constructor(firstName, lastName, address, ids) {
-        
+    constructor(firstName, lastName, address) {
+
         this.firstName = firstName;
         this.lastNAme = lastName;
         this.address = address;
-        this.ids = ids
+    }
+
+    set customerId(customerId) {
+        this.customerId = customerId;
     }
 
 }
+module.exports = Customer;
